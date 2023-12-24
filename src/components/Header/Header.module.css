@@ -1,0 +1,25 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 0px 0px 11px 0px #908e8e;
+}
+
+header h1{
+    font-weight: 700;
+}
+
+.darkModeBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.darkModeBlock span{
+    padding-left: 0.3rem;
+}
