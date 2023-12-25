@@ -1,3 +1,43 @@
 main{
+    margin-top: 6rem;
     background-color: hsl(0, 0%, 98%);
+    padding: 1rem;
 }
+
+.block1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    width: 15vw;
+    height: 5vh;
+    background-color: #fff;
+    font-family: "Nunito", sans-serif;
+    border-radius: 5px;
+}
+
+select{
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    z-index: 1;
+    
+}
+
+select:focus{
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
