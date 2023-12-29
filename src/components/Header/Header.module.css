@@ -13,6 +13,7 @@ header{
 }
 
 header h1{
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -24,4 +25,10 @@ header h1{
 
 .darkModeBlock span{
     padding-left: 0.3rem;
+}
+
+@media (max-width: 450px) {
+    header h1{
+        font-size: 1rem;
+    }
 }
