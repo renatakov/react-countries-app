@@ -52,6 +52,7 @@ select:focus{
 .searchBar{
     box-shadow: 0px 0px 7px 2px #a7a6a6;
     display: flex;
+    padding-left: 1rem;
     align-items: center;
     width: clamp(250px, 30%, 400px);
     background-color: #fff;
