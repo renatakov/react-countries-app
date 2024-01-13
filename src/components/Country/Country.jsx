@@ -1,8 +1,14 @@
 import s from "./Country.module.css"
+import { useNavigate } from "react-router-dom"
 
 const Country = (props) => {
+    const navigate = useNavigate()
+    const countryDetails = () => {
+        localStorage.setItem("country", props.name)
+        navigate("/countryDetails")
+    }
     return (
-        <div className={s.country}>
+        <div onClick={()=>countryDetails()} className={s.country}>
             <img src={props.flag} alt="" />
             <div className={s.info}>
         <h3>{props.name}</h3>
