@@ -2,9 +2,11 @@ import s from "./Country.module.css"
 import { useNavigate } from "react-router-dom"
 
 const Country = (props) => {
+    
+    console.log(props)
     const navigate = useNavigate()
     const countryDetails = () => {
-        localStorage.setItem("country", props.name)
+        localStorage.setItem('country', JSON.stringify(props));
         navigate("/countryDetails")
     }
     return (

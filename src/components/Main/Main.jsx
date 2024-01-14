@@ -52,6 +52,7 @@ const Main = () => {
 
     }, [])
     countries.sort((a, b) => a.name.common.toLowerCase() < b.name.common.toLowerCase() ? -1 : 1)
+    // console.log(countries);
     let Collection = () => {
         return countries.map((country) => {
             return <Country
@@ -61,6 +62,11 @@ const Main = () => {
                 region={country.region}
                 capital={country.capital}
                 flag={country.flags.png}
+                nativeName={country.name.nativeName}
+                subregion={country.subregion}
+                tld={country.tld}
+                languages={country.languages}
+                currencies={country.currencies}
             />
         })
     }

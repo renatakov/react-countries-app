@@ -1,22 +1,27 @@
 import { useEffect, useState } from "react"
 import s from "./CountryDetails.module.css"
-import axios from "axios"
 
 const CountryDetails = () => {
     const [countryDetails, setCountryDetails] = useState({})
     useEffect(()=>{
-        axios.get(`https://restcountries.com/v3.1/name/${localStorage.getItem("country").toLowerCase()}`)
-        .then(data=>setCountryDetails(...data.data))
-    }, [])
-    console.log(countryDetails)
+        setCountryDetails(JSON.parse(localStorage.getItem('country')))
+        // setCountryDetails(countryDetails.languages = Object.values(countryDetails.languages).join(','))
+    },[])
+    console.log(countryDetails.languages);
     return (
         <>
         
         <div className={s.countryDetails}>
-        <img src={countryDetails.flags.png} alt="" />
+        <img src={countryDetails.flag} alt="" />
         <div className={s.countryDetailsBlock}>
-            <h2>{countryDetails.name.common}</h2>
-            <span>Native Name: {countryDetails.name.nativeName.prs.common}</span>
+            <h2>{countryDetails.name}</h2>
+            {/* <span>Native Name: {countryDetails.name.nativeName}</span> */}
+            <span>Population: {countryDetails.population}</span>
+            <span>Region: {countryDetails.region}</span>
+            <span>Sub Region: {countryDetails.subregion}</span>
+            <span>Capital: {countryDetails.capital}</span>
+            <span>Top Level Domain: {countryDetails.tld.toString()}</span>
+            {/* <span>Languages: {countryDetails.languages}</span> */}
         </div>
         </div>
         </>
