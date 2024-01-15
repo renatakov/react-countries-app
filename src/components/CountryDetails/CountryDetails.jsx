@@ -5,9 +5,8 @@ const CountryDetails = () => {
     const [countryDetails, setCountryDetails] = useState({})
     useEffect(()=>{
         setCountryDetails(JSON.parse(localStorage.getItem('country')))
-        // setCountryDetails(countryDetails.languages = Object.values(countryDetails.languages).join(','))
     },[])
-    console.log(countryDetails.languages);
+    console.log(countryDetails);
     return (
         <>
         
@@ -20,8 +19,9 @@ const CountryDetails = () => {
             <span>Region: {countryDetails.region}</span>
             <span>Sub Region: {countryDetails.subregion}</span>
             <span>Capital: {countryDetails.capital}</span>
-            <span>Top Level Domain: {countryDetails.tld.toString()}</span>
-            {/* <span>Languages: {countryDetails.languages}</span> */}
+            <span>Top Level Domain: {countryDetails.tld}</span>
+            <span>Languages: {countryDetails.languages}</span>
+            <span>Border Countries: {countryDetails.borderCountries}</span>
         </div>
         </div>
         </>
