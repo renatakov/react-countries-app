@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 const Country = (props) => {
     
     // console.log(props)
+
     const navigate = useNavigate()
     const countryDetails = () => {
         localStorage.setItem('country', JSON.stringify(props));

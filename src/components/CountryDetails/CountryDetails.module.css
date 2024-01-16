@@ -1,0 +1,10 @@
+.countryDetails{
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem 0 0;
+}
+
+.countryDetailsBlock{
+    display: flex;
+    flex-direction: column;
+}
