@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-countries-app/static/css/main.80b7a26e.css",
+    "main.js": "/react-countries-app/static/js/main.34a5cc42.js",
+    "static/js/787.0898a1b2.chunk.js": "/react-countries-app/static/js/787.0898a1b2.chunk.js",
+    "static/media/Nunito-Medium.woff2": "/react-countries-app/static/media/Nunito-Medium.18df7578e375652f6c70.woff2",
+    "index.html": "/react-countries-app/index.html",
+    "main.80b7a26e.css.map": "/react-countries-app/static/css/main.80b7a26e.css.map",
+    "main.34a5cc42.js.map": "/react-countries-app/static/js/main.34a5cc42.js.map",
+    "787.0898a1b2.chunk.js.map": "/react-countries-app/static/js/787.0898a1b2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80b7a26e.css",
+    "static/js/main.34a5cc42.js"
+  ]
+}
