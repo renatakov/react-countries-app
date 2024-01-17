@@ -80,7 +80,7 @@ const Main = () => {
                     <input onInput={handleInput} ref={inputSearchRef} className={s.inputCountry} type="text" placeholder="Search for a country..." />
                 </div>
 
-                <Select searchable={false} clearable={false} options={options}  placeholder="Filter By Region" onChange={(e)=>selectFunc(e[0].label)} />
+                <Select style={{ background: "#fff", width: "100%"}} searchable={false} clearable={false} options={options}  placeholder="Filter By Region" onChange={(e)=>selectFunc(e[0].label)} />
             </div>
             <div className={s.countries}>
                 {inputSearchRef.current && inputSearchRef.current.value == "" ? Collection() : <SearchList list={searchList} />}

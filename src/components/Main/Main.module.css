@@ -13,7 +13,7 @@ main{
 
 .countries{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill,  minmax(300px, 1fr));
     padding: 1rem;
     gap: 25px;
 }
@@ -25,7 +25,6 @@ main{
     align-items: center;
     width: clamp(250px, 30%, 400px);
     background-color: #fff;
-
 }
 
 .searchBtn{
@@ -43,7 +42,10 @@ main{
 }
 
 @media (max-width: 450px) {
-    .countries{
+    /* .countries{
         grid-template-columns: repeat(1, 1fr);
+    } */
+    .searchBar{
+        margin-bottom: 2rem;
     }
 }
