@@ -12,6 +12,12 @@ const SearchList = (props)=>{
                 region={country.region}
                 capital={country.capital}
                 flag={country.flags.png}
+                nativeName={country.name.nativeName ? Object.values(country.name.nativeName)[0].common : []}
+                subregion={country.subregion}
+                tld={country.tld ? country.tld.join(', ') : []}
+                languages={country.languages ? Object.values(country.languages).join(', ') : []}
+                currencies={country.currencies ? Object.values(country.currencies)[0].name : []}
+                borderCountries={country.borders ? country.borders.join(', ') : []}
             />
         })
     }

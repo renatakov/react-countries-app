@@ -3,19 +3,20 @@ import s from "./CountryDetails.module.css"
 import { useNavigate } from "react-router-dom"
 
 const CountryDetails = () => {
+    console.log(JSON.parse(localStorage.getItem('country')))
     let navigate = useNavigate()
     const [countryDetails, setCountryDetails] = useState({})
     useEffect(() => {
-        setCountryDetails(JSON.parse(localStorage.getItem('country')))
+        if(localStorage.getItem('country')) setCountryDetails(JSON.parse(localStorage.getItem('country')));
     }, [])
     console.log(JSON.parse(localStorage.getItem('country')));
-    function handleClick(params) {
+    function handleClick() {
         navigate('/')
     }
     return (
         <>
             <div style={{ fontFamily: 'inherit' }} className={s.countryDetails}>
-            <button onClick={handleClick}>← Back</button>
+                <button onClick={handleClick}>← Back</button>
                 <img src={countryDetails.flag} alt="" />
                 <div className={s.countryDetailsBlock}>
                     <h1>{countryDetails.name}</h1>

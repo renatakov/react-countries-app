@@ -12,8 +12,4 @@
     box-sizing: border-box;
     border: 0;
     font-family: "Nunito", sans-serif;
-    --light-mode-text: hsl(200, 15%, 8%);
-    --dark-mode-text: hsl(0, 0%, 100%);
-    --dark-mode-e: hsl(209, 23%, 22%);
-
 }
